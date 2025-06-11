@@ -17,7 +17,8 @@ public class Main {
         //getArithmeticMean ();
         //getUserName();
         //calculateNew();
-        guessNumber();
+        //guessNumber();
+        dateTime();
     }
 
     public static void getUserInput() {
@@ -121,6 +122,16 @@ public class Main {
             }
 
         }
+    }
+
+    public static void dateTime() {
+        System.out.println("Enter any number two digits or more");
+        int time = scanner.nextInt();
+        int hour = time / 3600;
+        int min = (time % 3600) / 60;
+        int sec = time % 60;
+
+        System.out.printf("%02d:%02d:%02d", hour, min, sec);
     }
 }
 
