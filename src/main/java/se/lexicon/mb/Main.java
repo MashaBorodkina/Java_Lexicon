@@ -16,7 +16,8 @@ public class Main {
         //calculate();
         //getArithmeticMean ();
         //getUserName();
-        calculateNew();
+        //calculateNew();
+        guessNumber();
     }
 
     public static void getUserInput() {
@@ -102,6 +103,23 @@ public class Main {
             System.out.println(value1 + "/" + value2 + "=" + (value1 / value2));
         } else {
             System.out.println("Cannot to divided by zero");
+        }
+    }
+
+    public static void guessNumber() {
+        int randomInt = (int) (Math.random() * 500) + 1;
+        int userInt = 0;
+        while(userInt != randomInt) {
+            System.out.println("Enter a number from 1 to 500 to guess what the computer has thought of");
+            userInt = scanner.nextInt();
+            if(userInt<randomInt) {
+                System.out.println("Your number " + userInt + ";" + "your guess was too small. Try again" );
+            } else if (userInt>randomInt) {
+                System.out.println("Your number " + userInt + ";" + "your guess was too big. Try again" );
+            } else {
+                System.out.println("Your number " + userInt + ";" + "Yes! You guessed it!" );
+            }
+
         }
     }
 }
