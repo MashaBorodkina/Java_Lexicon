@@ -12,12 +12,12 @@ public class Main {
         System.out.println("Hello");
         System.out.println(name);
         System.out.println("Hello\n" + name);
-        //getUserInput();
-        //calculate();
-        //getArithmeticMean ();
-        //getUserName();
-        //calculateNew();
-        //guessNumber();
+        getUserInput();
+        calculate();
+        getArithmeticMean ();
+        getUserName();
+        calculateNew();
+        guessNumber();
         dateTime();
     }
 
