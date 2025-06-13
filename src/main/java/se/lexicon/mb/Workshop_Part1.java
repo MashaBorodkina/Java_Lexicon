@@ -1,6 +1,7 @@
 package se.lexicon.mb;
 
 import java.util.Scanner;
+import java.util.List;
 
 public class Workshop_Part1 {
     // Enter a number
@@ -10,6 +11,7 @@ public class Workshop_Part1 {
     // The result can be changed by new operations or cleared with 'C' or 'c'
     // Enter a number or press 'E' or 'e' to exit
 
+    public static final List<String> VALID_OPERATORS = List.of("+", "-", "*", "/", "c", "e", "=");
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -68,13 +70,7 @@ public class Workshop_Part1 {
                 continue;
 
             }
-            else if (!operator.equals("+") &&
-                    !operator.equals("-") &&
-                    !operator.equals("*") &&
-                    !operator.equals("/") &&
-                    !operator.equals("=") &&
-                    !operator.equalsIgnoreCase("C") &&
-                    !operator.equalsIgnoreCase("e")) {
+            else if (!VALID_OPERATORS.contains(operator.toLowerCase())) {
 
                 System.out.print("Operator doesn't correct. Try again!");
                 continue;
