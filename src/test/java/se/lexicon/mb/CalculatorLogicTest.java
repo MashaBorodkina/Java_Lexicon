@@ -1,6 +1,8 @@
 package se.lexicon.mb;
 
 import org.junit.jupiter.api.Test;
+import se.lexicon.mb.JavaFundamental_Part1.CalculatorLogic;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 

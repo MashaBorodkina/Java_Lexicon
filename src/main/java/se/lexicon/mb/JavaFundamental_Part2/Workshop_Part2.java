@@ -1,10 +1,9 @@
-package se.lexicon.mb;
+package se.lexicon.mb.JavaFundamental_Part2;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
 import java.util.Scanner;
 
 public class Workshop_Part2 {

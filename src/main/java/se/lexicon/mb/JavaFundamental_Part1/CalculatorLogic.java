@@ -1,4 +1,4 @@
-package se.lexicon.mb;
+package se.lexicon.mb.JavaFundamental_Part1;
 
 public class CalculatorLogic {
 

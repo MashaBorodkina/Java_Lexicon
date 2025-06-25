@@ -1,4 +1,4 @@
-package se.lexicon.mb;
+package se.lexicon.mb.JavaFundamental_Part1;
 
 import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
